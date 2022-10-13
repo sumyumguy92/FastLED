@@ -134,6 +134,20 @@ void CFastLED::delay(unsigned long ms) {
 	while((millis()-start) < ms);
 }
 
+void CFastLED::delayus(unsigned long us) {
+	unsigned long start = micros();
+        do {
+#ifndef FASTLED_ACCURATE_CLOCK
+		// make sure to allow at least one ms to pass to ensure the clock moves
+		// forward
+		::delayMicroseconds(1);
+#endif
+		show();
+		yield();
+	}
+	while((micros()-start) < us);
+}
+
 void CFastLED::setTemperature(const struct CRGB & temp) {
 	CLEDController *pCur = CLEDController::head();
 	while(pCur) {

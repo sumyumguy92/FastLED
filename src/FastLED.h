@@ -523,6 +523,8 @@ public:
 	/// @param ms the number of milliseconds to pause for
 	void delay(unsigned long ms);
 
+	void delayus(unsigned long us); 
+
 	/// Set a global color temperature.  Sets the color temperature for all added led strips, overriding whatever
 	/// previous color temperature those controllers may have had
 	/// @param temp A CRGB structure describing the color temperature
