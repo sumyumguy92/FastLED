@@ -235,10 +235,10 @@ _FL_DEFPIN( 3, 7, 0); _FL_DEFPIN( 4, 6, 0); _FL_DEFPIN( 7, 0, 0); _FL_DEFPIN( 8,
 
 #elif defined(ADAFRUIT_QTPY_M0)
 
-#define MAX_PIN 10
+#define MAX_PIN 11
 _FL_DEFPIN( 0, 3, 0); _FL_DEFPIN( 1, 0, 0); _FL_DEFPIN( 2, 4, 0); _FL_DEFPIN( 3, 5, 0);
 _FL_DEFPIN( 4, 16, 0); _FL_DEFPIN( 5, 17, 0); _FL_DEFPIN( 6, 6, 0); _FL_DEFPIN( 7, 7, 0);
-_FL_DEFPIN( 8, 11, 0); _FL_DEFPIN( 9, 9, 0); _FL_DEFPIN( 10, 10, 0);
+_FL_DEFPIN( 8, 11, 0); _FL_DEFPIN( 9, 9, 0); _FL_DEFPIN( 10, 10, 0); _FL_DEFPIN( 11, 18, 0);
 
 #define SPI_DATA  10
 #define SPI_CLOCK 8
