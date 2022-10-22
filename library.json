@@ -43,7 +43,7 @@
     "type": "git",
     "url": "https://github.com/musicmindmachine/FastLED---LEDGloves-Fork.git"
   },
-  "version": "3.5.1",
+  "version": "3.5.2",
   "license": "MIT",
   "homepage": "http://fastled.io",
   "frameworks": "arduino",
