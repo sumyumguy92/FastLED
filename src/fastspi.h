@@ -162,7 +162,7 @@ class SPIOutput<SPI_DATA, SPI_CLOCK, SPI_SPEED> : public ArdunioCoreSPIOutput<SP
 #else
 #  if !defined(FASTLED_INTERNAL) && !defined(FASTLED_ALL_PINS_HARDWARE_SPI)
 #    ifdef FASTLED_HAS_PRAGMA_MESSAGE
-#      pragma message "Forcing software SPI - no hardware SPI for you!"
+#     pragma message "Forcing software SPI - no hardware SPI for you!"
 #    else
 #      warning "Forcing software SPI - no hardware SPI for you!"
 #    endif
