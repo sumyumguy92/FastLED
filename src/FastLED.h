@@ -586,7 +586,7 @@ extern CFastLED FastLED;
 
 // Warnings for undefined things
 #ifndef HAS_HARDWARE_PIN_SUPPORT
-//#warning "No pin/port mappings found, pin access will be slightly slower. See fastpin.h for info."
+#warning "No pin/port mappings found, pin access will be slightly slower. See fastpin.h for info."
 #define NO_HARDWARE_PIN_SUPPORT
 #endif
 
