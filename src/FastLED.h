@@ -8,13 +8,13 @@
 #define FASTLED_HAS_PRAGMA_MESSAGE
 #endif
 
-#define FASTLED_VERSION 3005000
+#define FASTLED_VERSION 3005001
 #ifndef FASTLED_INTERNAL
 #  ifdef  FASTLED_SHOW_VERSION
 #    ifdef FASTLED_HAS_PRAGMA_MESSAGE
-#      pragma message "FastLED version 3.005.000"
+#      pragma message "FastLED version 3.005.001"
 #    else
-#      warning FastLED version 3.005.000  (Not really a warning, just telling you here.)
+#      warning FastLED version 3.005.001  (Not really a warning, just telling you here.)
 #    endif
 #  endif
 #endif
@@ -586,7 +586,7 @@ extern CFastLED FastLED;
 
 // Warnings for undefined things
 #ifndef HAS_HARDWARE_PIN_SUPPORT
-#warning "No pin/port mappings found, pin access will be slightly slower. See fastpin.h for info."
+//#warning "No pin/port mappings found, pin access will be slightly slower. See fastpin.h for info."
 #define NO_HARDWARE_PIN_SUPPORT
 #endif
 
